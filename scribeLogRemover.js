@@ -2,7 +2,7 @@ let rimraf = require('rimraf');
 let fs = require("fs");
 let df = require("df");
 
-let logPath = '';
+let logPath = ''; //Log file path
 
 let date = new Date();
 let currentMonth = date.getMonth();
