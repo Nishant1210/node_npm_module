@@ -1,0 +1,23 @@
+{
+  "name": "scribelogremover",
+  "version": "1.0.0",
+  "description": "This module automatically deletes the log files created by Scribe Logger on the servers if the memory utilisation on the server reaches a particular limit. You need to schedule this log remover file on the cronTab on the Linux servers for the period you want the logs to be removed.",
+  "main": "scribeLogRemover.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nishant1210/node_npm_module/blob/master/scribeLogRemover.js"
+  },
+  "dependencies": {
+    "df": "^1.1.1",
+    "rimraf": "^2.6.1",
+    "usage": "^0.7.1"
+  },
+  "keywords": [
+    "scribelogremover"
+  ],
+  "author": "Nishant",
+  "license": "ISC"
+}
