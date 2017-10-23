@@ -9,8 +9,6 @@ If the previous months log files are already deleted but still the memory utilis
 
 There are three configurable parameters which you need to set and after that you are good to go.
 
-    1. Log path for the log files ```let logPath = ''```
-    
-    2. Memory Utilisation value (Set it accordingly. Default Value = 80 percent) ``` result[0].percent```
-    
-    3. How many days files you want to be in the month folder for SPLUNK or for your convinence ```for (var i = 0; i < files.length - N; i++)```
+    1. Log path for the log files let logPath = ''
+    2. Memory Utilisation value (Set it accordingly. Default Value = 80 percent) result[0].percent
+    3. How many days files you want to be in the month folder for SPLUNK or for your convinence for (var i = 0; i < files.length - N; i++) 
