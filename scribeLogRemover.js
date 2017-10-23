@@ -2,7 +2,7 @@ let rimraf = require('rimraf');
 let fs = require("fs");
 let df = require("df");
 
-let logPath = '/home/ec2-user/project/Passbook-Points-Cron/logs/';
+let logPath = '';
 
 let date = new Date();
 let currentMonth = date.getMonth();
@@ -54,27 +54,3 @@ df(function(err, result) {
         }
     }
 });
-
-// When you add it to the project just export this and pass in the logpath
-
-// module.exports = function deleteScribeLogs(logPath) {
-//     let date = new Date();
-//     let currentMonth = date.getMonth();
-//     let currentYear = date.getFullYear();
-
-//     df(function(err, result) {
-//         if (result[0].percent > 3) {
-//             if (fs.existsSync(logPath + currentYear + '/')) {
-//                 for (var i = 0; i < months.length; i++) {
-//                     if (i < currentMonth && fs.existsSync(logPath + currentYear + '/' + months[i])) {
-//                         deleteFolder(logPath + currentYear + '/' + months[i]);
-//                     } else if (i === currentMonth) {
-//                         deleteFiles(logPath + currentYear + '/' + months[i]);
-//                     } else {
-//                         break;
-//                     }
-//                 }
-//             }
-//         }
-//     });
-// };
